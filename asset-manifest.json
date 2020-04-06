@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/israeli-whist/static/css/main.5f361e03.chunk.css",
+    "main.js": "/israeli-whist/static/js/main.d12cd3ea.chunk.js",
+    "main.js.map": "/israeli-whist/static/js/main.d12cd3ea.chunk.js.map",
+    "runtime-main.js": "/israeli-whist/static/js/runtime-main.735c7ad0.js",
+    "runtime-main.js.map": "/israeli-whist/static/js/runtime-main.735c7ad0.js.map",
+    "static/js/2.c5af540a.chunk.js": "/israeli-whist/static/js/2.c5af540a.chunk.js",
+    "static/js/2.c5af540a.chunk.js.map": "/israeli-whist/static/js/2.c5af540a.chunk.js.map",
+    "index.html": "/israeli-whist/index.html",
+    "precache-manifest.0ba8fa6de5e1c53a833af378bf0f3a01.js": "/israeli-whist/precache-manifest.0ba8fa6de5e1c53a833af378bf0f3a01.js",
+    "service-worker.js": "/israeli-whist/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/israeli-whist/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.c5af540a.chunk.js.LICENSE.txt": "/israeli-whist/static/js/2.c5af540a.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/israeli-whist/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.735c7ad0.js",
+    "static/js/2.c5af540a.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.d12cd3ea.chunk.js"
+  ]
+}
