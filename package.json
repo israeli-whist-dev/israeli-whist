@@ -8,7 +8,12 @@
     "@testing-library/user-event": "^7.2.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "react-native-web": "latest",
+    "expo": "36.0.1",
+    "expo-cli": "3.17.15",
+    "react-native": "0.62.1",
+    "babel-preset-expo": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
