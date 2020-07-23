@@ -1,0 +1,24 @@
+steps:
+  - name: gcr.io/cloud-builders/gcloud
+    args:
+      - kms
+      - decrypt
+      - --ciphertext-file=.env-dev.enc
+      - --plaintext-file=.env
+      - --location=global
+      - --keyring=whist-keyring
+      - --key=whist-key
+  - name: "gcr.io/cloud-builders/docker"
+    args:
+      ["build","-f","dev.Dockerfile", "-t", "gcr.io/whist-game-development/whist-client:$REVISION_ID", "."]
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["push", "gcr.io/whist-game-development/whist-client:$REVISION_ID"]
+  - name: "gcr.io/cloud-builders/kubectl"
+    args:
+      - "set"
+      - "image"
+      - "deployment/whist-client"
+      - "whist-client-sha256-1=gcr.io/whist-game-development/whist-client:$REVISION_ID"
+    env:
+      - "CLOUDSDK_COMPUTE_ZONE=us-central1-c"
+      - "CLOUDSDK_CONTAINER_CLUSTER=whist-game-cluster-development"
