@@ -13,7 +13,8 @@
     "expo": "36.0.1",
     "expo-cli": "3.17.15",
     "react-native": "0.62.1",
-    "babel-preset-expo": "latest"
+    "babel-preset-expo": "latest",
+    "lodash": "4.17.15"
   },
   "scripts": {
     "start": "react-scripts start",
