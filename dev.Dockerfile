@@ -8,7 +8,7 @@ RUN npm audit fix
 
 # RUN CI=true npm test
 # build orayya-frontend
-RUN npm run build
+RUN npm run build:dev
 
 # stage 2 - build the final image and copy the react build files
 FROM nginx:1.17.8-alpine

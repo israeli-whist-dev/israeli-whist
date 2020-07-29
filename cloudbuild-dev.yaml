@@ -4,7 +4,7 @@ steps:
       - kms
       - decrypt
       - --ciphertext-file=.env-dev.enc
-      - --plaintext-file=.env
+      - --plaintext-file=.env-dev
       - --location=global
       - --keyring=whist-keyring
       - --key=whist-key
