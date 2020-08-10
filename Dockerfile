@@ -1,14 +1,15 @@
-# stage1 - build react app first 
+# stage1 - build react app first
 FROM node:10 as build
 WORKDIR /whist-client
 COPY . ./
-# install and cache orayya-frontend dependencies
+
 RUN npm install
 RUN npm audit fix
 
 # RUN CI=true npm test
 # build orayya-frontend
 RUN npm run build
+
 
 # stage 2 - build the final image and copy the react build files
 FROM nginx:1.17.8-alpine
