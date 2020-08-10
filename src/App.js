@@ -9,7 +9,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
-          WHIST GAME
+          {process.env.REACT_APP_DANIEL}
         </p>
         <a
           className="App-link"

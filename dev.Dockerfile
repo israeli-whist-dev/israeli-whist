@@ -8,11 +8,11 @@ RUN npm audit fix
 
 # RUN CI=true npm test
 # build orayya-frontend
-RUN npm run build
+RUN npm run build:dev
 
 # stage 2 - build the final image and copy the react build files
 FROM nginx:1.17.8-alpine
-COPY --from=build /trending-bay-client/build/ /usr/share/nginx/html
+COPY --from=build /whist-client/build/ /usr/share/nginx/html
 # COPY --from=build /trending-bay-client/orayya_com_bundle.crt /etc/nginx/certs/orayya_com_bundle.crt
 # COPY --from=build /trending-bay-client/orayya_com.key /etc/ssl/private/orayya_com.key
 RUN rm /etc/nginx/conf.d/default.conf
