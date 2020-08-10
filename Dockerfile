@@ -10,7 +10,6 @@ RUN npm audit fix
 # build orayya-frontend
 RUN npm run build
 
-
 # stage 2 - build the final image and copy the react build files
 FROM nginx:1.17.8-alpine
 COPY --from=build /whist-client/build/ /usr/share/nginx/html
