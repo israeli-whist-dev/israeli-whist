@@ -18,7 +18,7 @@ steps:
       - "set"
       - "image"
       - "deployment/whist-client"
-      - "wwhist-client-8c6df9fdd=gcr.io/whist-game-production/whist-client:$REVISION_ID"
+      - "whist-client-sha256-1/whist-game-production/whist-client:$REVISION_ID"
     env:
       - "CLOUDSDK_COMPUTE_ZONE=us-central1-c"
       - "CLOUDSDK_CONTAINER_CLUSTER=whist-game-cluster-production"
